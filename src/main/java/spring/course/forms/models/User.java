@@ -1,8 +1,17 @@
 package spring.course.forms.models;
 
+import javax.validation.constraints.NotEmpty;
+
 public class User {
+
+    @NotEmpty
     private String username;
+
+    @NotEmpty
     private String password;
+
+    @NotEmpty
+    private String email;
 
     public String getUsername() {
         return username;
@@ -28,6 +37,5 @@ public class User {
         this.email = email;
     }
 
-    private String email;
 
 }
